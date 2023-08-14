@@ -36,15 +36,38 @@ const HomepageContent = () => { // TO AVOID https://i.imgur.com/798mUI4.png (FOR
     }
 
     return (
-
-        <div className="flex flex-col justify-center items-center gap-5 w-screen h-screen">
-            <h1 className="text-5xl font-bold">HOME PAGE</h1>
-            <button className="daisy-btn daisy-btn-primary" onClick={handleClick}>
-                Log ind
-            </button>
-            {buttonClicked && <h1 className="text-5xl font-bold">BUTTON CLICKED</h1>}
+        <div className="flex flex-col justify-center items-center w-screen h-screen bg-opacity-50 bg-black">
+            <div className="p-8 bg-gray-200 rounded-lg shadow-lg">
+                <h1 className="text-2xl font-bold mb-4">Log ind</h1>
+                <form>
+                    <div className="mb-4">
+                        <label htmlFor="email" className="block text-sm font-medium text-gray-600 mb-2">Email:</label>
+                        <input
+                            type="email"
+                            id="email"
+                            className="w-full p-2 border rounded-md"
+                            placeholder="Din email"
+                        />
+                    </div>
+                    <div className="mb-4">
+                        <label htmlFor="password" className="block text-sm font-medium text-gray-600 mb-2">Kodeord:</label>
+                        <input
+                            type="password"
+                            id="password"
+                            className="w-full p-2 border rounded-md"
+                            placeholder="Dit kodeord"
+                        />
+                    </div>
+                    <button
+                        type="submit"
+                        className="daisy-btn daisy-btn-primary"
+                        onClick={handleClick}
+                    >
+                        Log ind
+                    </button>
+                </form>
+            </div>
         </div>
-
     )
 }
 
