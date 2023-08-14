@@ -7,7 +7,8 @@ const WindowListener = ({children}) => {
     
     const escFunction = useCallback((event) => {
         if (event.key === "Escape") {
-            sendNuiCallback("/close", {}, (result) => {})
+            test()
+            //sendNuiCallback("/close", {}, (result) => {})
         }
     }, []);
 
@@ -29,6 +30,20 @@ const WindowListener = ({children}) => {
         
     })
     return children;
+}
+
+const test = async () => {
+    await fetch(`/api/hello`, {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json; charset=UTF-8'
+                },
+            })
+            .then((res) => {
+                res.json().then((data) => {
+                    console.log(data)
+                })
+            })
 }
 
 export default WindowListener;
