@@ -33,17 +33,18 @@ const WindowListener = ({children}) => {
 }
 
 const test = async () => {
-    await fetch(`/api/hello`, {
-                method: 'POST',
-                headers: {
-                  'Content-Type': 'application/json; charset=UTF-8'
-                },
-            })
-            .then((res) => {
-                res.json().then((data) => {
-                    console.log(data)
-                })
-            })
+    console.log(process.env.RESOURCE_NAME)
+    // await fetch(`/api/hello`, {
+    //             method: 'POST',
+    //             headers: {
+    //               'Content-Type': 'application/json; charset=UTF-8'
+    //             },
+    //         })
+    //         .then((res) => {
+    //             res.json().then((data) => {
+    //                 console.log(data)
+    //             })
+    //         })
 }
 
 export default WindowListener;
