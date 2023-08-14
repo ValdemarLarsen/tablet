@@ -56,11 +56,12 @@ const HomepageContent = () => { // TO AVOID https://i.imgur.com/798mUI4.png (FOR
         <div className="flex flex-col justify-center items-center w-screen h-screen bg-opacity-0 bg-black">
             <div className="p-12 bg-gray-200 rounded-lg shadow-lg">
                 <h1 className="text-2xl font-bold mb-4">Log ind</h1>
-                <div>
-                    The current theme is: {theme}
-                    <button onClick={() => setTheme('light')}>Light Mode</button>
-                    <button onClick={() => setTheme('dark')}>Dark Mode</button>
-                </div>
+                <button
+                    className={`w-fit absolute right-5 top-2 p-2 rounded-md hover:scale-110 active:scale-100 duration-200 bg-slate-200 dark:bg-[#212933]`}
+                    onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                >
+                    {theme === "light" ? "Dark" : "Light"}
+                </button>
                 <form onSubmit={handleSubmit}>
                     <div className="mb-4">
                         <label htmlFor="email" className="block text-sm font-medium text-gray-600 mb-2">Email:</label>
