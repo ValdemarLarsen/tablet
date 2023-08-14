@@ -12,6 +12,9 @@ const initialState: IAppState = {
     buttonClicked: false
 }
 
+
+console.log(initialState);
+
 const appSlice = createSlice({
   name: 'app',
   initialState,
@@ -35,6 +38,9 @@ const appSlice = createSlice({
     }
   },
 })
+
+
+
 
 export const { resetState, setValueOne, setValueTwo, setButtonClicked } = appSlice.actions
 
