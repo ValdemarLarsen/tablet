@@ -11,12 +11,13 @@ module.exports = {
     // add daisyUI plugin
     plugins: [require("daisyui")],
     daisyui: {
-        styled: true,
-        themes: true,
-        base: true,
-        utils: true,
-        logs: true,
-        rtl: false,
-        prefix: "daisy-",
-    },
+      styled: true,
+      themes: true,
+      base: true,
+      utils: true,
+      logs: true,
+      rtl: false,
+      prefix: "daisy-",
+      darkTheme: "dark",
+  },
 }
