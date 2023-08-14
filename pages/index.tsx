@@ -6,6 +6,7 @@ import store, { RootState } from "../state/store"
 import WindowListener from "../utils/WindowListener"
 import { useRouter } from 'next/router';
 import { sendNuiCallback } from '../utils/NuiCallbacks';
+import { useTheme } from "next-themes";
 
 const Homepage = () => (
     <>
@@ -23,7 +24,7 @@ const Homepage = () => (
 
 const HomepageContent = () => { // TO AVOID https://i.imgur.com/798mUI4.png (FOR DEMO PUPOSES ONLY)
     const dispatch = useDispatch()
-
+    const { theme, setTheme } = useTheme()
     const buttonClicked = useSelector((state: RootState) => state.app.buttonClicked)
 
 
@@ -55,6 +56,11 @@ const HomepageContent = () => { // TO AVOID https://i.imgur.com/798mUI4.png (FOR
         <div className="flex flex-col justify-center items-center w-screen h-screen bg-opacity-0 bg-black">
             <div className="p-12 bg-gray-200 rounded-lg shadow-lg">
                 <h1 className="text-2xl font-bold mb-4">Log ind</h1>
+                <div>
+                    The current theme is: {theme}
+                    <button onClick={() => setTheme('light')}>Light Mode</button>
+                    <button onClick={() => setTheme('dark')}>Dark Mode</button>
+                </div>
                 <form onSubmit={handleSubmit}>
                     <div className="mb-4">
                         <label htmlFor="email" className="block text-sm font-medium text-gray-600 mb-2">Email:</label>
