@@ -3,6 +3,8 @@ import { Provider, useDispatch, useSelector } from "react-redux"
 import { setButtonClicked } from "../state/reducers/app"
 import store, { RootState } from "../state/store"
 import WindowListener from "../utils/WindowListener"
+import { useRouter } from 'next/router';
+
 
 const Homepage = () => (
     <>
@@ -24,14 +26,25 @@ const HomepageContent = () => { // TO AVOID https://i.imgur.com/798mUI4.png (FOR
     const buttonClicked = useSelector((state: RootState) => state.app.buttonClicked)
 
 
+    const router = useRouter();
+
+    const handleClick = () => {
+        // Her antager jeg, at du ønsker at navigere til "/om"-siden.
+        router.push('/om');
+        // Hvis du bruger Redux og ønsker at dispatche en action når knappen klikkes, kan du gøre det her:
+        // dispatch(setButtonClicked(true));
+    }
+
     return (
-        
-            <div className="flex flex-col justify-center items-center gap-5 w-screen h-screen">
-                <h1 className="text-5xl font-bold">HOME PAGE</h1>
-                <button className="daisy-btn daisy-btn-primary" onClick={() => dispatch(setButtonClicked(true))}>CLICK ME</button>
-                {buttonClicked && <h1 className="text-5xl font-bold">BUTTON CLICKED</h1>}
-            </div>
-        
+
+        <div className="flex flex-col justify-center items-center gap-5 w-screen h-screen">
+            <h1 className="text-5xl font-bold">HOME PAGE</h1>
+            <button className="daisy-btn daisy-btn-primary" onClick={handleClick}>
+                Log ind
+            </button>
+            {buttonClicked && <h1 className="text-5xl font-bold">BUTTON CLICKED</h1>}
+        </div>
+
     )
 }
 
