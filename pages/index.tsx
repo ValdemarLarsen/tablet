@@ -24,7 +24,8 @@ const Homepage = () => (
 
 const HomepageContent = () => { // TO AVOID https://i.imgur.com/798mUI4.png (FOR DEMO PUPOSES ONLY)
     const dispatch = useDispatch()
-    const { theme, setTheme } = useTheme()
+    const { systemTheme, theme, setTheme } = useTheme();
+    const currentTheme = theme === 'system' ? systemTheme : theme;
     const buttonClicked = useSelector((state: RootState) => state.app.buttonClicked)
 
 
@@ -57,10 +58,9 @@ const HomepageContent = () => { // TO AVOID https://i.imgur.com/798mUI4.png (FOR
             <div className="p-12 bg-gray-200 rounded-lg shadow-lg">
                 <h1 className="text-2xl font-bold mb-4">Log ind</h1>
                 <button
-                    className={`w-fit absolute right-5 top-2 p-2 rounded-md hover:scale-110 active:scale-100 duration-200 bg-slate-200 dark:bg-[#212933]`}
-                    onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                >
-                    {theme === "light" ? "Dark" : "Light"}
+                    onClick={() => theme == "dark" ? setTheme('light') : setTheme("dark")}
+                    className='bg-gray-800 dark:bg-gray-50 hover:bg-gray-600 dark:hover:bg-gray-300 transition-all duration-100 text-white dark:text-gray-800 px-8 py-2 text-2xl md:text-4xl rounded-lg absolute bottom-32'>
+                    Toggle Mode
                 </button>
                 <form onSubmit={handleSubmit}>
                     <div className="mb-4">
