@@ -12,7 +12,6 @@
  *  })
  */
 const sendNuiCallback = async (endpoint: string, data: object, cb) => {
-    console.log(endpoint, data);
     await fetch(`https://${process.env.RESOURCE_NAME}${endpoint}`, {
         method: 'POST',
         headers: {

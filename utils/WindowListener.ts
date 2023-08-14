@@ -7,7 +7,6 @@ const WindowListener = ({children}) => {
     
     const escFunction = useCallback((event) => {
         if (event.key === "Escape") {
-            console.log("trykker escape");
             sendNuiCallback("/close", {}, (result) => {})
         }
     }, []);
