@@ -24,13 +24,13 @@ const HomepageContent = () => { // TO AVOID https://i.imgur.com/798mUI4.png (FOR
     const buttonClicked = useSelector((state: RootState) => state.app.buttonClicked)
 
     return (
-        <div className="hidden">
-            <div className="flex flex-col justify-center items-center gap-5 w-screen h-screen">
-                <h1 className="text-5xl font-bold">HOME PAGE</h1>
-                <button className="daisy-btn daisy-btn-primary" onClick={() => dispatch(setButtonClicked(true))}>CLICK ME</button>
-                {buttonClicked && <h1 className="text-5xl font-bold">BUTTON CLICKED</h1>}
-            </div>
+
+        <div className="flex flex-col justify-center items-center gap-5 w-screen h-screen">
+            <h1 className="text-5xl font-bold">HOME PAGE</h1>
+            <button className="daisy-btn daisy-btn-primary" onClick={() => dispatch(setButtonClicked(true))}>CLICK ME</button>
+            {buttonClicked && <h1 className="text-5xl font-bold">BUTTON CLICKED</h1>}
         </div>
+
     )
 }
 
