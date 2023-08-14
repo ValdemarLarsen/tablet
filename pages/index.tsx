@@ -23,10 +23,6 @@ const HomepageContent = () => { // TO AVOID https://i.imgur.com/798mUI4.png (FOR
 
     const buttonClicked = useSelector((state: RootState) => state.app.buttonClicked)
 
-    window.addEventListener('message', (event) => {
-        console.log(event.data.data);
-    });
-
 
     return (
         
