@@ -87,7 +87,7 @@ const HomepageContent = () => { // TO AVOID https://i.imgur.com/798mUI4.png (FOR
                     </div>
                     <button
                         type="submit"
-                        className="btn btn-secondary"
+                        className="btn btn-success"
                     >
                         Log ind
                     </button>
