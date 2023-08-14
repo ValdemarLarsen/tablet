@@ -6,11 +6,11 @@ const Navbar = () => {
             <div className="navbar-start">
                 <img src="https://media.discordapp.net/attachments/1008406017903706163/1131009951754629170/politi.png" className="w-25 h-10" />
             </div>
-            <div className="navbar-center hidden lg:flex">
+            <div className="navbar-center lg:flex">
                 <ul className="menu menu-horizontal px-1">
 
                     <div className="dropdown dropdown-bottom text-white">
-                        <label tabIndex={0} className="btn m-1">Kriminlaregister</label>
+                        <label tabIndex={0} className="btn m-1 text-white">Kriminlaregister</label>
                         <ul tabIndex={0} className="dropdown-content z-[1] menu p-2">
                             <li><a>Søg i kr</a></li>
                             <li><a>Opret til kr</a></li>
