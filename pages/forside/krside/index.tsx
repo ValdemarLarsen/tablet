@@ -23,7 +23,7 @@ export default function ProductDetailsWithInfoSidebar() {
                                 {/* Card Header */}
                                 <div className="py-4 px-5 bg-gray-50 dark:bg-gray-700/50">
                                     <h3 className="font-semibold mb-1">
-                                        Tidligere sigtelser
+                                        Tidligere sigtelser test
                                     </h3>
                                     <h4 className="text-sm font-medium text-gray-500 dark:text-gray-400">
                                         Et overblik over alle tidligere sigtelser for:
