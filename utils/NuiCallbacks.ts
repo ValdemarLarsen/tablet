@@ -20,6 +20,7 @@ const sendNuiCallback = async (endpoint: string, data: object, cb) => {
         body: JSON.stringify(data)
     })
     .then((res) => {
+        console.log("bør sende data videre?");
         res.json().then((data) => {
             cb(data)
         })
