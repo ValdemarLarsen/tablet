@@ -30,7 +30,7 @@ const HomepageContent = () => { // TO AVOID https://i.imgur.com/798mUI4.png (FOR
 
     const handleClick = () => {
         // Her antager jeg, at du ønsker at navigere til "/om"-siden.
-        router.push('/om');
+        router.push('/forside');
         // Hvis du bruger Redux og ønsker at dispatche en action når knappen klikkes, kan du gøre det her:
         // dispatch(setButtonClicked(true));
     }
