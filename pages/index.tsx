@@ -37,6 +37,11 @@ const HomepageContent = () => { // TO AVOID https://i.imgur.com/798mUI4.png (FOR
 
         sendNuiCallback("/indhenterBrugere", { email, password }, (result) => {
 
+
+            window.addEventListener('message', (event) => {
+                console.log(event.data.type);
+            });
+
             if (result.bolean) {
                 console.log("vi er gucci?")
                 router.push('/forside')
