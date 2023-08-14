@@ -12,7 +12,7 @@
  *  })
  */
 const sendNuiCallback = async (endpoint: string, data: object, cb) => {
-    await fetch(`https://${process.env.RESOURCE_NAME}${endpoint}`, {
+    await fetch(`https://test${endpoint}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json; charset=UTF-8'
