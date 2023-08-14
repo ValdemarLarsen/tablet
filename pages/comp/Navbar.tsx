@@ -23,7 +23,11 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+                <div className="avatar online">
+                    <div className="w-24 rounded-full">
+                        <img src="https://media.discordapp.net/attachments/1008406017903706163/1131009951754629170/politi.png" />
+                    </div>
+                </div>
             </div>
         </div>
     );
