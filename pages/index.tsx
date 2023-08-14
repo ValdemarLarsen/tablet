@@ -22,7 +22,7 @@ const Homepage = () => (
     </>
 )
 
-const HomepageContent = () => { // TO AVOID https://i.imageur.com/798mUI4.png (FOR DEMO PUPOSES ONLY)
+const HomepageContent = () => { // TO AVOID https://i.imgur.com/798mUI4.png (FOR DEMO PUPOSES ONLY)
     const dispatch = useDispatch()
     const { systemTheme, theme, setTheme } = useTheme();
     const currentTheme = theme === 'system' ? systemTheme : theme;
