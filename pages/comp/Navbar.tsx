@@ -1,4 +1,5 @@
 // components/Navbar.tsx
+//HEJSA MED DIG
 const Navbar = () => {
     return (
         <div className="navbar bg-base-100">
