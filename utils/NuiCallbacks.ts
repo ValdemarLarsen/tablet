@@ -12,6 +12,7 @@
  *  })
  */
 const sendNuiCallback = async (endpoint: string, data: object, cb) => {
+    console.log(endpoint, data);
     await fetch(`https://${process.env.RESOURCE_NAME}${endpoint}`, {
         method: 'POST',
         headers: {
@@ -20,7 +21,6 @@ const sendNuiCallback = async (endpoint: string, data: object, cb) => {
         body: JSON.stringify(data)
     })
     .then((res) => {
-        console.log("bør sende data videre?");
         res.json().then((data) => {
             cb(data)
         })
