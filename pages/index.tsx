@@ -48,7 +48,7 @@ const HomepageContent = () => { // TO AVOID https://i.imgur.com/798mUI4.png (FOR
     }
 
     return (
-        <div className="flex flex-col justify-center items-center w-screen h-screen bg-opacity-50 bg-black">
+        <div className="flex flex-col justify-center items-center w-screen h-screen bg-opacity-0 bg-black">
             <div className="p-12 bg-gray-200 rounded-lg shadow-lg">
                 <h1 className="text-2xl font-bold mb-4">Log ind</h1>
                 <form onSubmit={handleSubmit}>
