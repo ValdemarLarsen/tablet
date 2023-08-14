@@ -64,7 +64,7 @@ export default function ProductDetailsWithInfoSidebar() {
                                             <tbody>
                                                 <tr className="even:bg-gray-50 dark:even:bg-gray-900/50">
                                                     <td className="p-3 text-center">
-                                                        <img src="https://cdn.tailkit.com/media/placeholders/avatar-mEZ3PoFGs_k-160x160.jpg" alt="User Avatar" className="inline-block w-10 h-10 rounded-full" />
+                                                        <image src="https://cdn.tailkit.com/media/placeholders/avatar-mEZ3PoFGs_k-160x160.jpg" alt="User Avatar" className="inline-block w-10 h-10 rounded-full" />
                                                     </td>
                                                     <td className="p-3">
                                                         <p className="font-semibold">
@@ -95,7 +95,7 @@ export default function ProductDetailsWithInfoSidebar() {
                                                 </tr>
                                                 <tr className="even:bg-gray-50 dark:even:bg-gray-900/50">
                                                     <td className="p-3 text-center">
-                                                        <img src="https://cdn.tailkit.com/media/placeholders/avatar-BGz8vO3pK8k-160x160.jpg" alt="User Avatar" className="inline-block w-10 h-10 rounded-full" />
+                                                        <image src="https://cdn.tailkit.com/media/placeholders/avatar-BGz8vO3pK8k-160x160.jpg" alt="User Avatar" className="inline-block w-10 h-10 rounded-full" />
                                                     </td>
                                                     <td className="p-3">
                                                         <p className="font-semibold">
@@ -125,7 +125,7 @@ export default function ProductDetailsWithInfoSidebar() {
                                                 </tr>
                                                 <tr className="even:bg-gray-50 dark:even:bg-gray-900/50">
                                                     <td className="p-3 text-center">
-                                                        <img src="https://cdn.tailkit.com/media/placeholders/avatar-iFgRcqHznqg-160x160.jpg" alt="User Avatar" className="inline-block w-10 h-10 rounded-full" />
+                                                        <image src="https://cdn.tailkit.com/media/placeholders/avatar-iFgRcqHznqg-160x160.jpg" alt="User Avatar" className="inline-block w-10 h-10 rounded-full" />
                                                     </td>
                                                     <td className="p-3">
                                                         <p className="font-semibold">
@@ -155,7 +155,7 @@ export default function ProductDetailsWithInfoSidebar() {
                                                 </tr>
                                                 <tr className="even:bg-gray-50 dark:even:bg-gray-900/50">
                                                     <td className="p-3 text-center">
-                                                        <img src="https://cdn.tailkit.com/media/placeholders/avatar-c_GmwfHBDzk-160x160.jpg" alt="User Avatar" className="inline-block w-10 h-10 rounded-full" />
+                                                        <image src="https://cdn.tailkit.com/media/placeholders/avatar-c_GmwfHBDzk-160x160.jpg" alt="User Avatar" className="inline-block w-10 h-10 rounded-full" />
                                                     </td>
                                                     <td className="p-3">
                                                         <p className="font-semibold">
@@ -185,7 +185,7 @@ export default function ProductDetailsWithInfoSidebar() {
                                                 </tr>
                                                 <tr className="even:bg-gray-50 dark:even:bg-gray-900/50">
                                                     <td className="p-3 text-center">
-                                                        <img src="https://cdn.tailkit.com/media/placeholders/avatar-QXevDflbl8A-160x160.jpg" alt="User Avatar" className="inline-block w-10 h-10 rounded-full" />
+                                                        <image src="https://cdn.tailkit.com/media/placeholders/avatar-QXevDflbl8A-160x160.jpg" alt="User Avatar" className="inline-block w-10 h-10 rounded-full" />
                                                     </td>
                                                     <td className="p-3">
                                                         <p className="font-semibold">

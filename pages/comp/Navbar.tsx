@@ -37,7 +37,7 @@ export default function Navbar() {
               <div className="flex items-center">
                 {/* Logo */}
                 <a href="#" className="group inline-flex items-center space-x-2 font-bold text-lg tracking-wide text-gray-900 hover:text-gray-600 dark:text-gray-100 dark:hover:text-gray-300">
-                  <img src="https://cdn.discordapp.com/attachments/1008406017903706163/1131009951754629170/politi.png" className="w-15 h-5" alt="Tablet Billedet" />
+                  <image src="https://cdn.discordapp.com/attachments/1008406017903706163/1131009951754629170/politi.png" className="w-15 h-5" alt="Tablet Billedet" />
 
                 </a>
                 {/* END Logo */}
@@ -295,7 +295,7 @@ export default function Navbar() {
                     <tbody>
                       <tr className="even:bg-gray-50 dark:even:bg-gray-900/50">
                         <td className="p-3 text-center">
-                          <img src="https://cdn.tailkit.com/media/placeholders/avatar-mEZ3PoFGs_k-160x160.jpg" alt="User Avatar" className="inline-block w-10 h-10 rounded-full" />
+                          <image src="https://cdn.tailkit.com/media/placeholders/avatar-mEZ3PoFGs_k-160x160.jpg" alt="User Avatar" className="inline-block w-10 h-10 rounded-full" />
                         </td>
                         <td className="p-3">
                           <p className="font-semibold">
@@ -319,7 +319,7 @@ export default function Navbar() {
                       </tr>
                       <tr className="even:bg-gray-50 dark:even:bg-gray-900/50">
                         <td className="p-3 text-center">
-                          <img src="https://cdn.tailkit.com/media/placeholders/avatar-BGz8vO3pK8k-160x160.jpg" alt="User Avatar" className="inline-block w-10 h-10 rounded-full" />
+                          <image src="https://cdn.tailkit.com/media/placeholders/avatar-BGz8vO3pK8k-160x160.jpg" alt="User Avatar" className="inline-block w-10 h-10 rounded-full" />
                         </td>
                         <td className="p-3">
                           <p className="font-semibold">
@@ -343,7 +343,7 @@ export default function Navbar() {
                       </tr>
                       <tr className="even:bg-gray-50 dark:even:bg-gray-900/50">
                         <td className="p-3 text-center">
-                          <img src="https://cdn.tailkit.com/media/placeholders/avatar-iFgRcqHznqg-160x160.jpg" alt="User Avatar" className="inline-block w-10 h-10 rounded-full" />
+                          <image src="https://cdn.tailkit.com/media/placeholders/avatar-iFgRcqHznqg-160x160.jpg" alt="User Avatar" className="inline-block w-10 h-10 rounded-full" />
                         </td>
                         <td className="p-3">
                           <p className="font-semibold">
@@ -367,7 +367,7 @@ export default function Navbar() {
                       </tr>
                       <tr className="even:bg-gray-50 dark:even:bg-gray-900/50">
                         <td className="p-3 text-center">
-                          <img src="https://cdn.tailkit.com/media/placeholders/avatar-c_GmwfHBDzk-160x160.jpg" alt="User Avatar" className="inline-block w-10 h-10 rounded-full" />
+                          <image src="https://cdn.tailkit.com/media/placeholders/avatar-c_GmwfHBDzk-160x160.jpg" alt="User Avatar" className="inline-block w-10 h-10 rounded-full" />
                         </td>
                         <td className="p-3">
                           <p className="font-semibold">
@@ -391,7 +391,7 @@ export default function Navbar() {
                       </tr>
                       <tr className="even:bg-gray-50 dark:even:bg-gray-900/50">
                         <td className="p-3 text-center">
-                          <img src="https://cdn.tailkit.com/media/placeholders/avatar-QXevDflbl8A-160x160.jpg" alt="User Avatar" className="inline-block w-10 h-10 rounded-full" />
+                          <image src="https://cdn.tailkit.com/media/placeholders/avatar-QXevDflbl8A-160x160.jpg" alt="User Avatar" className="inline-block w-10 h-10 rounded-full" />
                         </td>
                         <td className="p-3">
                           <p className="font-semibold">
