@@ -4,7 +4,7 @@ const Navbar = () => {
     return (
         <div className="navbar bg-base-100">
             <div className="navbar-start">
-                <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                <img src="https://media.discordapp.net/attachments/1008406017903706163/1131009951754629170/politi.png" className="w-20 h-10">
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
