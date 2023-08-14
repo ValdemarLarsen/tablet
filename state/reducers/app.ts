@@ -31,6 +31,7 @@ const appSlice = createSlice({
     },
     setButtonClicked: (state, action: PayloadAction<boolean>) => {
         state.buttonClicked = action.payload
+        console.log("hejsa")
     }
   },
 })
