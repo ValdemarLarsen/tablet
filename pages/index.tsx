@@ -4,7 +4,7 @@ import { setButtonClicked } from "../state/reducers/app"
 import store, { RootState } from "../state/store"
 import WindowListener from "../utils/WindowListener"
 import { useRouter } from 'next/router';
-
+import { sendNuiCallback } from '../utils/NuiCallbacks';
 
 const Homepage = () => (
     <>
@@ -31,13 +31,12 @@ const HomepageContent = () => { // TO AVOID https://i.imgur.com/798mUI4.png (FOR
     const handleClick = () => {
         // Her antager jeg, at du ønsker at navigere til "/om"-siden.
         router.push('/forside');
-        // Hvis du bruger Redux og ønsker at dispatche en action når knappen klikkes, kan du gøre det her:
-        // dispatch(setButtonClicked(true));
+        sendNuiCallback("/indhenterBrugere", {}, (result) => {})
     }
 
     return (
         <div className="flex flex-col justify-center items-center w-screen h-screen bg-opacity-50 bg-black">
-            <div className="p-8 bg-gray-200 rounded-lg shadow-lg">
+            <div className="p-12 bg-gray-200 rounded-lg shadow-lg">
                 <h1 className="text-2xl font-bold mb-4">Log ind</h1>
                 <form>
                     <div className="mb-4">
