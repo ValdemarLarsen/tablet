@@ -36,7 +36,7 @@ const HomepageContent = () => { // TO AVOID https://i.imgur.com/798mUI4.png (FOR
         e.preventDefault(); // Forhindrer formen i at genindlæse siden
 
         sendNuiCallback("/indhenterBrugere", { email, password }, (result) => {
-            console.log(JSON.parse(result));
+            console.log(result.bolean);
         });
     }
 
