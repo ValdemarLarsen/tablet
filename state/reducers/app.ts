@@ -13,7 +13,6 @@ const initialState: IAppState = {
 }
 
 
-console.log(initialState);
 
 const appSlice = createSlice({
   name: 'app',
@@ -34,7 +33,7 @@ const appSlice = createSlice({
     },
     setButtonClicked: (state, action: PayloadAction<boolean>) => {
         state.buttonClicked = action.payload
-        
+        console.log("ændreing her?");
     }
   },
 })
