@@ -36,7 +36,7 @@ export default function Navbar() {
                 <div className="flex flex-shrink-0 items-center">
                   <img
                     className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                    src="https://cdn.discordapp.com/attachments/1008406017903706163/1131009951754629170/politi.png"
                     alt="Your Company"
                   />
                 </div>
