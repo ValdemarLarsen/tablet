@@ -17,6 +17,5 @@ module.exports = {
         logs: true,
         rtl: false,
         prefix: "daisy-",
-        darkTheme: "dark",
     },
 }
