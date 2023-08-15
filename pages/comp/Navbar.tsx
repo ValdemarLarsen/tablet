@@ -181,7 +181,7 @@ export default function Navbar() {
                   <div className="p-5 grow flex justify-between items-center">
                     <dl className="space-y-1">
                       <dt className="text-2xl font-bold">
-                        50
+                        500
                       </dt>
                       <dd className="uppercase font-semibold text-sm text-gray-500 tracking-wider dark:text-gray-400">
                         Sager Oprettet
