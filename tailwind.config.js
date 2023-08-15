@@ -7,7 +7,18 @@ module.exports = {
     ],
     darkMode: 'class',
     theme: {
-      extend: {},
+      extend: {
+        screens: {
+          '2xl': '1536px',
+        },
+        container: {
+          center: true,
+          padding: '1rem',
+          screens: {
+            '2xl': '1750px',  // eller hvilken som helst anden værdi, du ønsker
+          },
+        },
+      },
     },
     // add daisyUI plugin
     plugins: [require("daisyui")]
