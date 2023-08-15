@@ -430,21 +430,15 @@ export default function Navbar() {
                 {/* END Tables: Striped */}
 
               </div>
-
               {/* Card Body */}
             </div>
             {/* END Card Headings: Title with Subtitle */}
           </div>
-          {/* END Page Section */}
-          <div className="flex h-screen items-center">
-            <div
-              className={'flex-none jutify-center lg:flex flex-col w-full lg:w-80 xl:w-96 p-4 lg:p-8 bg-gray-50 dark:bg-gray-800 dark:bg-opacity-25'}
-            >
-              {/* Placeholder */}
-              <div className="flex-auto flex items-center justify-center rounded-xl bg-gray-50 border-2 border-dashed border-gray-200 text-gray-400 py-64 dark:bg-gray-800 dark:border-gray-700">Side Content</div>
-            </div>
-          </div>
 
+          {/* Placeholder */}
+          <div className="flex-auto flex items-center justify-center rounded-xl bg-gray-50 border-2 border-dashed border-gray-200 text-gray-400 py-64 dark:bg-gray-800 dark:border-gray-700">Side Content</div>
+
+          {/* END Page Section */}
         </main>
         {/* END Page Content */}
 
