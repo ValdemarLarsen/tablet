@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 // Headless UI, for more info and examples you can check out https://github.com/tailwindlabs/headlessui
 import { Menu, Transition } from "@headlessui/react";
 import { RootState } from './../../state/store';
-import { Realnav } from './Realnav'
+import  Realnav  from './Realnav'
 export default function Navbar() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
