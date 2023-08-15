@@ -267,7 +267,7 @@ export default function Navbar() {
 
 
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:gap-8 mt-4">
-            <div className="w-auto h-auto rounded-lg bg-gray-100 lg:col-span-2">
+            <div className="w-auto h-fit rounded-lg bg-gray-100 lg:col-span-2">
               <div className="flex flex-col rounded-lg shadow-sm bg-white overflow-hidden dark:text-gray-100 dark:bg-gray-800">
                 {/* Card Header */}
                 <div className="py-4 px-5 bg-gray-50 dark:bg-gray-700/50">
