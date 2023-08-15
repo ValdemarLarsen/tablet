@@ -161,9 +161,7 @@ export default function Navbar() {
         <main id="page-content" className="max-w-full">
 
           <div className="container xl:max-w-10xl mx-auto p-6 lg:p10">
-            <div className={'flex-none justify-center lg:flex flex-col w-full lg:w-80 xl:w-96 p-4 lg:p-8 bg-gray-50 dark:bg-gray-800 dark:bg-opacity-25'}>
-              <div className="flex-auto flex items-center justify-center rounded-xl bg-gray-50 border-2 border-dashed border-gray-200 text-gray-400 py-64 dark:bg-gray-800 dark:border-gray-700">Side Content</div>
-            </div>
+
             <>
 
               {/* Statistics: Simple with Action */}
@@ -178,6 +176,9 @@ export default function Navbar() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8">
                 {/* Card */}
                 <div className="flex flex-col rounded-lg shadow-sm bg-white overflow-hidden dark:text-gray-100 dark:bg-gray-800">
+                  <div className={'flex-none justify-center lg:flex flex-col w-full lg:w-80 xl:w-96 p-4 lg:p-8 bg-gray-50 dark:bg-gray-800 dark:bg-opacity-25'}>
+                    <div className="flex-auto flex items-center justify-center rounded-xl bg-gray-50 border-2 border-dashed border-gray-200 text-gray-400 py-64 dark:bg-gray-800 dark:border-gray-700">Side Content</div>
+                  </div>
                   {/* Body */}
                   <div className="p-5 grow flex justify-between items-center">
                     <dl className="space-y-1">
