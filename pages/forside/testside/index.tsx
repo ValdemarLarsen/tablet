@@ -198,7 +198,7 @@ export default function StackedDarkHeaderAlternateWithSideContent() {
         {/* END Page Header */}
 
         {/* Page Content */}
-        <main id="page-content" className="flex flex-auto flex-col max-w-full">
+        <main id="page-content" className="flex flex-auto flex-col w-full">
           {/* Page Heading */}
           <div className="dark bg-gray-800 text-gray-100 h-48">
             <div className="container xl:max-w-7xl mx-auto px-4 lg:px-8">
