@@ -15,7 +15,7 @@ import { useTheme } from "next-themes";
 
 const Homepage = () => (
     <>
-        <div style={{ width: '1920px', height: '1080px', overflow: 'hidden' }}>
+        
             <Head>
                 <title>{process.env.RESOURCE_NAME}</title>
             </Head>
@@ -25,7 +25,7 @@ const Homepage = () => (
                     <HomepageContent />
                 </WindowListener>
             </Provider>
-        </div>
+        
     </>
 )
 

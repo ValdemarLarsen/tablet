@@ -2,14 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
+@layer base {
     body {
-        @apply dark:bg-gray-800 bg-white
-        
+        @apply dark: bg-gray-800 bg-white
     }
 }
 
 body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     width: 1920px;
     height: 1080px;
 }
