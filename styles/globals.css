@@ -2,9 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-body {
-    height: 1920px;
-    width: 1080px;
-}

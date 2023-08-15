@@ -1,11 +1,11 @@
 import Head from "next/head"
 import { useState } from 'react';
 import { Provider, useDispatch, useSelector } from "react-redux"
-import { setButtonClicked } from "../state/reducers/app"
-import store, { RootState } from "../state/store"
-import WindowListener from "../utils/WindowListener"
+import { setButtonClicked } from "../../state/reducers/app"
+import store, { RootState } from "../../state/store"
+import WindowListener from "../../utils/WindowListener"
 import { useRouter } from 'next/router';
-import { sendNuiCallback } from '../utils/NuiCallbacks';
+import { sendNuiCallback } from '../../utils/NuiCallbacks';
 import { useTheme } from "next-themes";
 
 
