@@ -7,6 +7,8 @@ import WindowListener from "../utils/WindowListener"
 import { useRouter } from 'next/router';
 import { sendNuiCallback } from '../utils/NuiCallbacks';
 import { useTheme } from "next-themes";
+import { setUserData } from '../state/reducers/brugerdata';  // Juster stien efter din filstruktur
+
 
 const Homepage = () => (
     <>
@@ -45,7 +47,13 @@ const HomepageContent = () => { // TO AVOID https://i.imgur.com/798mUI4.png (FOR
             });
 
             if (result.bolean) {
-                console.log(result.row.brugernavn, result.row.kodeord, result.row.fuldenavn);
+                const userData = {
+                    username: result.row.brugernavn,
+                    password: result.row.kodeord,
+                    fullName: result.row.fuldenavn,
+                };
+
+                dispatch(setUserData(userData));
                 router.push('/forside')
             } else {
                 console.log("prøv igen..")
