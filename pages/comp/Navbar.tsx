@@ -156,16 +156,17 @@ export default function Navbar() {
         <main id="page-content" className="max-w-full">
           {/* Page Section */}
           <div className="container xl:max-w-8xl mx-auto p-6 lg:p10">
-            <div
-              className={'flex-none jutify-center lg:flex flex-col w-full lg:w-80 xl:w-96 p-4 lg:p-8 bg-gray-50 dark:bg-gray-800 dark:bg-opacity-25'}
-            >
-              {/* Placeholder */}
-              <div className="flex-auto flex items-center justify-center rounded-xl bg-gray-50 border-2 border-dashed border-gray-200 text-gray-400 py-64 dark:bg-gray-800 dark:border-gray-700">Side Content</div>
-            </div>
+
             <>
 
               {/* Statistics: Simple with Action */}
-
+              {/* Placeholder - Start */}
+              <div
+                className={'flex-none jutify-center lg:flex flex-col w-full lg:w-80 xl:w-96 p-4 lg:p-8 bg-gray-50 dark:bg-gray-800 dark:bg-opacity-25'}
+              >
+                <div className="flex-auto flex items-center justify-center rounded-xl bg-gray-50 border-2 border-dashed border-gray-200 text-gray-400 py-64 dark:bg-gray-800 dark:border-gray-700">Side Content</div>
+              </div>
+              {/* Placeholder - End */}
               <div className="flex items-center justify-center mb-3">
                 <svg className="w-6 h-6 text-gray-800 dark:text-white mr-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 18">
                   <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 12v5m5-9v9m5-5v5m5-9v9M1 7l5-6 5 6 5-6" />
@@ -256,6 +257,13 @@ export default function Navbar() {
                 {/* END Card */}
               </div>
               {/* END Statistics: Simple with Action */}
+              {/* Placeholder - Start */}
+              <div
+                className={'flex-none jutify-center lg:flex flex-col w-full lg:w-80 xl:w-96 p-4 lg:p-8 bg-gray-50 dark:bg-gray-800 dark:bg-opacity-25'}
+              >
+                <div className="flex-auto flex items-center justify-center rounded-xl bg-gray-50 border-2 border-dashed border-gray-200 text-gray-400 py-64 dark:bg-gray-800 dark:border-gray-700">Side Content</div>
+              </div>
+              {/* Placeholder - End */}
             </>
             {/* Card Headings: Title with Subtitle */}
 
