@@ -269,7 +269,7 @@ export default function Navbar() {
               <div className="w-2/5 grow flex justify-between items-center m-2 rounded-lg border border-gray-200 rounded dark:border-gray-700">
                 <p>hejsa</p>
               </div>
-              <div className="w-11/12"></div>  {/* Spacer div */}
+              <div className="w-screen"></div>  {/* Spacer div */}
               <div className="w-2/5 p-5 grow flex justify-between items-center m-2 rounded-lg border border-gray-200 rounded dark:border-gray-700">
                 <p>hejsa</p>
               </div>
