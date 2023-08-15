@@ -1,12 +1,16 @@
 import type { NextPage } from 'next';
 import Navbar from '../comp/Navbar';
+import { Provider } from 'react-redux'
+import store from './../../state/store';
+
 
 const Om: NextPage = () => {
   return (
-      
-    <div>
-      <Navbar />  
-    </div>
+    <Provider store={store}>
+      <div>
+        <Navbar />  
+      </div>
+    </Provider>
   );
 }
 
