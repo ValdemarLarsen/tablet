@@ -9,8 +9,7 @@ export default function StackedDarkHeaderAlternateWithSideContent() {
 
   return (
     <>
-      {/* Page Container */}
-      <div id="page-container" className="flex flex-col mx-auto w-full min-h-screen min-w-[320px] bg-gray-100 dark:text-gray-100 dark:bg-gray-800/50">
+      
         {/* Page Header */}
         <header id="page-header" className="flex flex-none items-center z-1 bg-gray-800">
           <div className="container xl:max-w-7xl mx-auto px-4 lg:px-8">
@@ -296,7 +295,7 @@ export default function StackedDarkHeaderAlternateWithSideContent() {
           </div>
         </footer>
         {/* END Page Footer */}
-      </div>
+      
       {/* END Page Container */}
     </>
   )
