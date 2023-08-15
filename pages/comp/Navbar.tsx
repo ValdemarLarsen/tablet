@@ -423,6 +423,13 @@ export default function Navbar() {
                   </table>
                   {/* END Table */}
                 </div>
+
+                <div
+                  className={'flex-none lg:flex flex-col w-full lg:w-80 xl:w-96 p-4 lg:p-8 bg-gray-50 dark:bg-gray-800 dark:bg-opacity-25'}
+                >
+                  {/* Placeholder */}
+                  <div className="flex-auto flex items-center justify-center rounded-xl bg-gray-50 border-2 border-dashed border-gray-200 text-gray-400 py-64 dark:bg-gray-800 dark:border-gray-700">Side Content</div>
+                </div>
                 {/* END Responsive Table Container */}
 
                 {/* END Tables: Striped */}
