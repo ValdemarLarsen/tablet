@@ -8,17 +8,24 @@ import { useRouter } from 'next/router';
 import { sendNuiCallback } from '../utils/NuiCallbacks';
 import { useTheme } from "next-themes";
 
+
+
+
+
+
 const Homepage = () => (
     <>
-        <Head>
-            <title>{process.env.RESOURCE_NAME}</title>
-        </Head>
-        <Provider store={store}>
-            <WindowListener>
+        <div style={{ width: '1920px', height: '1080px', overflow: 'hidden' }}>
+            <Head>
+                <title>{process.env.RESOURCE_NAME}</title>
+            </Head>
+            <Provider store={store}>
+                <WindowListener>
 
-                <HomepageContent />
-            </WindowListener>
-        </Provider>
+                    <HomepageContent />
+                </WindowListener>
+            </Provider>
+        </div>
     </>
 )
 
