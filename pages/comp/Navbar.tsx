@@ -155,7 +155,7 @@ export default function Navbar() {
         {/* Page Content */}
         <main id="page-content" className="max-w-full">
           {/* Page Section */}
-          <div className="container xl:max-w-8xl mx-auto p-6 lg:p10">
+          <div className="container xl:max-w-10xl mx-auto p-6 lg:p10">
 
             <>
 
