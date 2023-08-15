@@ -267,8 +267,69 @@ export default function Navbar() {
           {/* Card Headings: Title with Subtitle */}
 
 
-          <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:gap-8">
-            <div className="h-32 rounded-lg bg-gray-100 lg:col-span-2"></div>
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:gap-8 mt-4">
+            <div className="h-32 rounded-lg bg-gray-100 lg:col-span-2">
+            <div className="border border-gray-200 rounded overflow-x-auto min-w-full bg-white dark:bg-gray-800 dark:border-gray-700">
+                {/* Table */}
+                <table className="min-w-full text-sm align-middle whitespace-nowrap">
+                  {/* Table Header */}
+                  <thead>
+                    <tr>
+                      <th className="px-3 py-4 text-gray-900 bg-gray-100/75 font-semibold text-center dark:text-gray-50 dark:bg-gray-700/25">
+                        Photo
+                      </th>
+                      <th className="px-3 py-4 text-gray-900 bg-gray-100/75 font-semibold text-left dark:text-gray-50 dark:bg-gray-700/25">
+                        Name
+                      </th>
+                      <th className="px-3 py-4 text-gray-900 bg-gray-100/75 font-semibold text-left dark:text-gray-50 dark:bg-gray-700/25">
+                        Email
+                      </th>
+                      <th className="px-3 py-4 text-gray-900 bg-gray-100/75 font-semibold text-left dark:text-gray-50 dark:bg-gray-700/25">
+                        Plan
+                      </th>
+                      <th className="px-3 py-4 text-gray-900 bg-gray-100/75 font-semibold text-center dark:text-gray-50 dark:bg-gray-700/25">
+                        Actions
+                      </th>
+                    </tr>
+                  </thead>
+                  {/* END Table Header */}
+
+                  {/* Table Body */}
+                  <tbody>
+                    <tr className="even:bg-gray-50 dark:even:bg-gray-900/50">
+                      <td className="p-3 text-center">
+                        <img src="https://cdn.tailkit.com/media/placeholders/avatar-mEZ3PoFGs_k-160x160.jpg" alt="User Avatar" className="inline-block w-10 h-10 rounded-full" />
+                      </td>
+                      <td className="p-3">
+                        <p className="font-semibold">
+                          Valdemar Larsen
+                        </p>
+                        <p className="text-gray-500 dark:text-gray-400">
+                          Web Designer
+                        </p>
+                      </td>
+                      <td className="p-3 text-gray-500 dark:text-gray-400">
+                        n.hart@example.com
+                      </td>
+                      <td className="p-3">
+                        <div className="font-semibold inline-flex px-2 py-1 leading-4 text-xs rounded-full text-emerald-900 bg-emerald-100 dark:bg-emerald-200">Agency</div>
+                      </td>
+                      <td className="p-3 text-center">
+                        <button type="button" className="inline-flex justify-center items-center space-x-2 border font-semibold rounded-lg px-3 py-2 leading-5 text-sm border-gray-200 bg-white text-gray-800 hover:border-gray-300 hover:text-gray-900 hover:shadow-sm focus:ring focus:ring-gray-300 focus:ring-opacity-25 active:border-gray-200 active:shadow-none dark:border-gray-700 dark:bg-gray-800 dark:text-gray-300 dark:hover:border-gray-600 dark:hover:text-gray-200 dark:focus:ring-gray-600 dark:focus:ring-opacity-40 dark:active:border-gray-700">
+                          Edit
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                  {/* END Table Body */}
+                </table>
+                {/* END Table */}
+              </div>
+
+
+
+
+            </div>
             <div className="h-32 rounded-lg bg-gray-100"></div>
             <div className="h-32 rounded-lg bg-gray-100"></div>
           </div>
@@ -285,10 +346,7 @@ export default function Navbar() {
                 Her er alle de seneste sager der er blevet oprettet!
               </h4>
             </div>
-            {/* END Card Header */}
-
-            {/* Card Body */}
-            {/* Card Body */}
+       
           </div>
           {/* END Card Headings: Title with Subtitle */}
         </div>
