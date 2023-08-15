@@ -2,7 +2,7 @@ import { Fragment, useState } from "react";
 import { useSelector } from 'react-redux';
 
 import { Menu, Transition } from "@headlessui/react";
-import { RootState } from './../../../state/store.ts';
+import { RootState } from './../../../state/store';
 
 export default function StackedDarkHeaderAlternateWithSideContent() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
