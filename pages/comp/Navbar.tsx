@@ -184,7 +184,7 @@ export default function Navbar() {
                         500
                       </dt>
                       <dd className="uppercase font-semibold text-sm text-gray-500 tracking-wider dark:text-gray-400">
-                        Sager Oprettet
+                        Antal sager oprettet
                       </dd>
                     </dl>
                     <div className="font-semibold inline-flex px-2 py-1 leading-4 items-center space-x-1 text-sm rounded-full text-emerald-800 bg-emerald-200">
