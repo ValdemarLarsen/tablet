@@ -33,10 +33,7 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Page Container */}
-      <div className={'flex-none justify-center lg:flex flex-col w-full lg:w-80 xl:w-96 p-4 lg:p-8 bg-gray-50 dark:bg-gray-800 dark:bg-opacity-25'}>
-        <div className="flex-auto flex items-center justify-center rounded-xl bg-gray-50 border-2 border-dashed border-gray-200 text-gray-400 py-64 dark:bg-gray-800 dark:border-gray-700">Side Content</div>
-      </div>
+
 
       <div id="page-container" className="flex flex-col mx-auto w-full min-h-screen min-w-[320px] bg-gray-100 dark:text-gray-100 dark:bg-gray-900">
         {/* Page Header */}
@@ -154,6 +151,10 @@ export default function Navbar() {
             </div>
           </div>
         </header>
+        {/* Page Container */}
+        <div className={'flex-none justify-center lg:flex flex-col w-full lg:w-80 xl:w-96 p-4 lg:p-8 bg-gray-50 dark:bg-gray-800 dark:bg-opacity-25'}>
+          <div className="flex-auto flex items-center justify-center rounded-xl bg-gray-50 border-2 border-dashed border-gray-200 text-gray-400 py-64 dark:bg-gray-800 dark:border-gray-700">Side Content</div>
+        </div>
         {/* END Page Header */}
 
         {/* Page Content */}
