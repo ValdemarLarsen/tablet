@@ -34,6 +34,10 @@ export default function Navbar() {
   return (
     <>
       {/* Page Container */}
+      <div className={'flex-none justify-center lg:flex flex-col w-full lg:w-80 xl:w-96 p-4 lg:p-8 bg-gray-50 dark:bg-gray-800 dark:bg-opacity-25'}>
+        <div className="flex-auto flex items-center justify-center rounded-xl bg-gray-50 border-2 border-dashed border-gray-200 text-gray-400 py-64 dark:bg-gray-800 dark:border-gray-700">Side Content</div>
+      </div>
+
       <div id="page-container" className="flex flex-col mx-auto w-full min-h-screen min-w-[320px] bg-gray-100 dark:text-gray-100 dark:bg-gray-900">
         {/* Page Header */}
         <header id="page-header" className="flex flex-none items-center bg-white shadow-sm z-1 dark:bg-gray-800">
@@ -153,9 +157,7 @@ export default function Navbar() {
         {/* END Page Header */}
 
         {/* Page Content */}
-        <div className={'flex-none justify-center lg:flex flex-col w-full lg:w-80 xl:w-96 p-4 lg:p-8 bg-gray-50 dark:bg-gray-800 dark:bg-opacity-25'}>
-          <div className="flex-auto flex items-center justify-center rounded-xl bg-gray-50 border-2 border-dashed border-gray-200 text-gray-400 py-64 dark:bg-gray-800 dark:border-gray-700">Side Content</div>
-        </div>
+
 
         <main id="page-content" className="max-w-full">
           {/* Page Section */}
@@ -164,12 +166,6 @@ export default function Navbar() {
             <>
 
               {/* Statistics: Simple with Action */}
-              {/* Placeholder - Start */}
-              <div
-                className={'flex-none jutify-center lg:flex flex-col w-full lg:w-80 xl:w-96 p-4 lg:p-8 bg-gray-50 dark:bg-gray-800 dark:bg-opacity-25'}
-              >
-                <div className="flex-auto flex items-center justify-center rounded-xl bg-gray-50 border-2 border-dashed border-gray-200 text-gray-400 py-64 dark:bg-gray-800 dark:border-gray-700">Side Content</div>
-              </div>
               {/* Placeholder - End */}
               <div className="flex items-center justify-center mb-3">
                 <svg className="w-6 h-6 text-gray-800 dark:text-white mr-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 18">
@@ -261,12 +257,7 @@ export default function Navbar() {
                 {/* END Card */}
               </div>
               {/* END Statistics: Simple with Action */}
-              {/* Placeholder - Start */}
-              <div
-                className={'flex-none jutify-center lg:flex flex-col w-full lg:w-80 xl:w-96 p-4 lg:p-8 bg-gray-50 dark:bg-gray-800 dark:bg-opacity-25'}
-              >
-                <div className="flex-auto flex items-center justify-center rounded-xl bg-gray-50 border-2 border-dashed border-gray-200 text-gray-400 py-64 dark:bg-gray-800 dark:border-gray-700">Side Content</div>
-              </div>
+
               {/* Placeholder - End */}
             </>
             {/* Card Headings: Title with Subtitle */}
