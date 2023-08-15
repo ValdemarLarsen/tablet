@@ -35,7 +35,7 @@ export default function Navbar() {
     <>
 
 
-      <div id="page-container" className="flex flex-col dark:bg-gray-900">
+      <div id="page-container" className="h-full w-full bg-gray-100 dark:text-gray-100 dark:bg-gray-900">
         {/* Page Header */}
         <header id="page-header" className="flex flex-none items-center bg-white shadow-sm z-1 dark:bg-gray-800">
           <div className="container mx-auto">
