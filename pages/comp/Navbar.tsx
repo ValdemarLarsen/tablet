@@ -44,7 +44,7 @@ export default function Navbar() {
               <div className="flex items-center">
                 {/* Logo */}
                 <a href="#" className="group inline-flex items-center space-x-2 font-bold text-lg tracking-wide text-gray-900 hover:text-gray-600 dark:text-gray-100 dark:hover:text-gray-300">
-                  <img src="https://cdn.discordapp.com/attachments/1008406017903706163/1131009951754629170/politi.png" className="w-15 h-5" alt="Tablet Billedet" />
+                  <img src="https://cdn.discordapp.com/attachments/1008406017903706163/1131009951754629170/politi.png" className="w-25 h-10" alt="Tablet Billedet" />
 
                 </a>
                 {/* END Logo */}
@@ -160,7 +160,7 @@ export default function Navbar() {
 
         <main id="page-content" className="max-w-full">
 
-          <div className="container xl:max-w-10xl mx-auto p-6 lg:p10">
+          <div className="2xl:container mx-auto p-6 lg:p10">
 
             <>
 
@@ -173,10 +173,14 @@ export default function Navbar() {
                 <h1 className="text-3xl font-bold">Statistikker for {currentMonth}</h1>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-5 gap-4 lg:gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8">
                 {/* Card */}
+
+
+
+
                 <div className="flex flex-col rounded-lg shadow-sm bg-white overflow-hidden dark:text-gray-100 dark:bg-gray-800">
-                 
+
                   {/* Body */}
                   <div className="p-5 grow flex justify-between items-center">
                     <dl className="space-y-1">
@@ -184,7 +188,7 @@ export default function Navbar() {
                         500
                       </dt>
                       <dd className="uppercase font-semibold text-sm text-gray-500 tracking-wider dark:text-gray-400">
-                        Antal sager oprettet
+                        Sager Oprettet
                       </dd>
                     </dl>
                     <div className="font-semibold inline-flex px-2 py-1 leading-4 items-center space-x-1 text-sm rounded-full text-emerald-800 bg-emerald-200">
@@ -261,6 +265,16 @@ export default function Navbar() {
               {/* Placeholder - End */}
             </>
             {/* Card Headings: Title with Subtitle */}
+            <div className="flex justify-center mt-4">
+              <div className="w-2/5 grow flex justify-between items-center m-2 rounded-lg border border-gray-200 rounded dark:border-gray-700">
+                <p>hejsa</p>
+              </div>
+              <div className="w-7/12"></div>  {/* Spacer div */}
+              <div className="w-2/5 p-5 grow flex justify-between items-center m-2 rounded-lg border border-gray-200 rounded dark:border-gray-700">
+                <p>hejsa</p>
+              </div>
+            </div>
+
 
             <div className="flex flex-col rounded-lg shadow-sm bg-white overflow-hidden dark:text-gray-100 dark:bg-gray-800 mt-4">
               {/* Card Header */}
