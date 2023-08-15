@@ -2,12 +2,12 @@ import { Fragment, useState } from "react";
 import { useSelector } from 'react-redux';
 
 import { Menu, Transition } from "@headlessui/react";
-import { RootState } from '../state/store';
+import { RootState } from './../../state/store';
 
 
 export default function Navbar() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
-  const fullname = useSelector((state: RootState) => state.user.fullname);
+  const fullname = useSelector((state: RootState) => state.user.fullName);
 
   const months = [
     "januar",
