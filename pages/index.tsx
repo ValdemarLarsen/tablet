@@ -7,7 +7,7 @@ import WindowListener from "../utils/WindowListener"
 import { useRouter } from 'next/router';
 import { sendNuiCallback } from '../utils/NuiCallbacks';
 import { useTheme } from "next-themes";
-
+import '../styles/global.css';
 
 
 
