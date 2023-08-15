@@ -313,7 +313,7 @@ export default function Navbar() {
                         </td>
                         <td className="p-3">
                           <p className="font-semibold">
-                            Nansi Hart
+                            Valdemar Larsen
                           </p>
                           <p className="text-gray-500 dark:text-gray-400">
                             Web Designer
