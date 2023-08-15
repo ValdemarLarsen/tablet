@@ -268,7 +268,7 @@ export default function Navbar() {
 
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:gap-8 mt-4">
             <div className="w-auto rounded-lg bg-gray-100 lg:col-span-2">
-              <div className="flex flex-col rounded-lg shadow-sm bg-white overflow-hidden dark:text-gray-100 dark:bg-gray-800 mt-4">
+              <div className="flex flex-col rounded-lg shadow-sm bg-white overflow-hidden dark:text-gray-100 dark:bg-gray-800">
                 {/* Card Header */}
                 <div className="py-4 px-5 bg-gray-50 dark:bg-gray-700/50">
                   <h3 className="font-semibold mb-1">
@@ -388,7 +388,82 @@ export default function Navbar() {
 
 
             </div>
-            <div className="h-32 rounded-lg bg-gray-100"></div>
+            <div className="h-auto rounded-lg bg-gray-100">
+              <h1 className="text-center text-white font-bold">Seneste Efterlysninger</h1>
+              <nav className="border border-gray-200 rounded-lg bg-white divide-y divide-gray-200 overflow-hidden dark:text-gray-100 dark:bg-gray-900 dark:border-gray-700 dark:divide-gray-700">
+                <a href="#" className="p-4 flex justify-between items-center text-gray-700 hover:text-gray-700 hover:bg-gray-50 active:bg-white dark:text-gray-200 dark:hover:bg-gray-800/50 dark:active:bg-gray-900">
+                  <div className="flex items-center space-x-4">
+                    <img src="https://cdn.tailkit.com/media/placeholders/avatar-iFgRcqHznqg-160x160.jpg" alt="User Avatar" className="inline-block w-10 h-10 rounded-full" />
+                    <div>
+                      <p className="text-sm font-semibold">
+                        Thomas Reynolds
+                      </p>
+                      <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                        Web Developer
+                      </p>
+                    </div>
+                  </div>
+                  <svg className="hi-mini hi-chevron-right inline-block w-5 h-5 opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" /></svg>
+                </a>
+                <a href="#" className="p-4 flex justify-between items-center text-gray-700 hover:text-gray-700 hover:bg-gray-50 active:bg-white dark:text-gray-200 dark:hover:bg-gray-800/50 dark:active:bg-gray-900">
+                  <div className="flex items-center space-x-4">
+                    <img src="https://cdn.tailkit.com/media/placeholders/avatar-8PMvB4VyVXA-160x160.jpg" alt="User Avatar" className="inline-block w-10 h-10 rounded-full" />
+                    <div>
+                      <p className="text-sm font-semibold">
+                        Chad Hale
+                      </p>
+                      <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                        Support Specialist
+                      </p>
+                    </div>
+                  </div>
+                  <svg className="hi-mini hi-chevron-right inline-block w-5 h-5 opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" /></svg>
+                </a>
+                <a href="#" className="p-4 flex justify-between items-center text-gray-700 hover:text-gray-700 hover:bg-gray-50 active:bg-white dark:text-gray-200 dark:hover:bg-gray-800/50 dark:active:bg-gray-900">
+                  <div className="flex items-center space-x-4">
+                    <img src="https://cdn.tailkit.com/media/placeholders/avatar-bY4GXQKfZrA-160x160.jpg" alt="User Avatar" className="inline-block w-10 h-10 rounded-full" />
+                    <div>
+                      <p className="text-sm font-semibold">
+                        Angela Tong
+                      </p>
+                      <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                        Human Resources
+                      </p>
+                    </div>
+                  </div>
+                  <svg className="hi-mini hi-chevron-right inline-block w-5 h-5 opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" /></svg>
+                </a>
+                <a href="#" className="p-4 flex justify-between items-center text-gray-700 hover:text-gray-700 hover:bg-gray-50 active:bg-white dark:text-gray-200 dark:hover:bg-gray-800/50 dark:active:bg-gray-900">
+                  <div className="flex items-center space-x-4">
+                    <img src="https://cdn.tailkit.com/media/placeholders/avatar-euZ2n8dGUcQ-160x160.jpg" alt="User Avatar" className="inline-block w-10 h-10 rounded-full" />
+                    <div>
+                      <p className="text-sm font-semibold">
+                        James Ocampo
+                      </p>
+                      <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                        Product Designer
+                      </p>
+                    </div>
+                  </div>
+                  <svg className="hi-mini hi-chevron-right inline-block w-5 h-5 opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" /></svg>
+                </a>
+                <a href="#" className="p-4 flex justify-between items-center text-gray-700 hover:text-gray-700 hover:bg-gray-50 active:bg-white dark:text-gray-200 dark:hover:bg-gray-800/50 dark:active:bg-gray-900">
+                  <div className="flex items-center space-x-4">
+                    <img src="https://cdn.tailkit.com/media/placeholders/avatar-mEZ3PoFGs_k-160x160.jpg" alt="User Avatar" className="inline-block w-10 h-10 rounded-full" />
+                    <div>
+                      <p className="text-sm font-semibold">
+                        Debra Johnson
+                      </p>
+                      <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                        Marketing
+                      </p>
+                    </div>
+                  </div>
+                  <svg className="hi-mini hi-chevron-right inline-block w-5 h-5 opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" /></svg>
+                </a>
+              </nav>
+
+            </div>
             <div className="h-32 rounded-lg bg-gray-100"></div>
           </div>
           {/* END Card Headings: Title with Subtitle */}
