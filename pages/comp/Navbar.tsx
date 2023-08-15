@@ -2,10 +2,13 @@ import { Fragment, useState } from "react";
 import { useSelector } from 'react-redux';
 // Headless UI, for more info and examples you can check out https://github.com/tailwindlabs/headlessui
 import { Menu, Transition } from "@headlessui/react";
+import { RootState } from './../../state/store';
 
 export default function Navbar() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
+  const appState = useSelector((state: RootState) => state.app);
+  console.log(appState); //
 
   const months = [
     "januar",
