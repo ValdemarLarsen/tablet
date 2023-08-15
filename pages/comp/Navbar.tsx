@@ -153,7 +153,7 @@ export default function Navbar() {
         {/* END Page Header */}
 
         {/* Page Content */}
-        <main id="page-content" className="flex flex-auto flex-col max-w-full">
+        <main id="page-content" className="max-w-full">
           {/* Page Section */}
           <div className="container xl:max-w-7xl mx-auto p-4 lg:p-8">
             <>
@@ -251,12 +251,6 @@ export default function Navbar() {
               </div>
               {/* END Statistics: Simple with Action */}
             </>
-            <div
-              className={'flex-none lg:flex flex-col w-full lg:w-80 xl:w-96 p-4 lg:p-8 bg-gray-50 dark:bg-gray-800 dark:bg-opacity-25'}
-            >
-              {/* Placeholder */}
-              <div className="flex-auto flex items-center justify-center rounded-xl bg-gray-50 border-2 border-dashed border-gray-200 text-gray-400 py-64 dark:bg-gray-800 dark:border-gray-700">Side Content</div>
-            </div>
             {/* Card Headings: Title with Subtitle */}
 
             <div className="flex flex-col rounded-lg shadow-sm bg-white overflow-hidden dark:text-gray-100 dark:bg-gray-800 mt-4">
