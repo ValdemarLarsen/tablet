@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Navbar from '../comp/Navbar';
-import Tabs from  '../comp/Tabs';
+
 
 
 const Om: NextPage = () => {
@@ -8,7 +8,6 @@ const Om: NextPage = () => {
       
     <div>
       <Navbar />
-      <Tabs />  
     </div>
   );
 }
