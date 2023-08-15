@@ -1,11 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit'
 import appReducer from "./reducers/app"
-import brugerdata from "./reducers/brugerdata"
 
 const store = configureStore({
   reducer: {
-    app: appReducer,
-    user: brugerdata
+    app: appReducer
   },
 })
 

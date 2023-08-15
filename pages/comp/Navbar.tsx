@@ -1,13 +1,11 @@
 import { Fragment, useState } from "react";
 import { useSelector } from 'react-redux';
-
+// Headless UI, for more info and examples you can check out https://github.com/tailwindlabs/headlessui
 import { Menu, Transition } from "@headlessui/react";
-import { RootState } from './../../state/store';
-
 
 export default function Navbar() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
-  const fullname = useSelector((state: RootState) => state.user.fullName);
+
 
   const months = [
     "januar",
@@ -73,7 +71,7 @@ export default function Navbar() {
                 <Menu as="div" className="relative inline-block">
                   {/* Dropdown Toggle Button */}
                   <Menu.Button className="inline-flex justify-center items-center space-x-2 border font-semibold rounded-lg px-3 py-2 leading-5 text-sm border-gray-200 bg-white text-gray-800 hover:border-gray-300 hover:text-gray-900 hover:shadow-sm focus:ring focus:ring-gray-300 focus:ring-opacity-25 active:border-gray-200 active:shadow-none dark:border-gray-700 dark:bg-gray-800 dark:text-gray-300 dark:hover:border-gray-600 dark:hover:text-gray-200 dark:focus:ring-gray-600 dark:focus:ring-opacity-40 dark:active:border-gray-700">
-                    <span>{fullname}</span>
+                    <span>John</span>
                     <svg className="hi-mini hi-chevron-down inline-block w-5 h-5 opacity-40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" /></svg>
                   </Menu.Button>
                   {/* END Dropdown Toggle Button */}
@@ -249,7 +247,7 @@ export default function Navbar() {
             </>
 
             {/* Card Headings: Title with Subtitle */}
-
+            
             <div className="flex flex-col rounded-lg shadow-sm bg-white overflow-hidden dark:text-gray-100 dark:bg-gray-800 mt-4">
               {/* Card Header */}
               <div className="py-4 px-5 bg-gray-50 dark:bg-gray-700/50">
