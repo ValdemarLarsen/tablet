@@ -158,7 +158,7 @@ export default function Navbar() {
         {/* Page Content */}
 
 
-        <main id="page-content" className="max-w-full">
+        
 
           <div className="2xl:container mx-auto p-6 lg:p10">
 
@@ -459,7 +459,7 @@ export default function Navbar() {
           </div>
 
           {/* END Page Section */}
-        </main>
+        
         {/* END Page Content */}
 
         {/* Page Footer */}
