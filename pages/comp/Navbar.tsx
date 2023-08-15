@@ -155,7 +155,13 @@ export default function Navbar() {
         {/* Page Content */}
         <main id="page-content" className="max-w-full">
           {/* Page Section */}
-          <div className="container xl:max-w-7xl mx-auto p-4 lg:p-8">
+          <div className="container xl:max-w-8xl mx-auto p-6 lg:p10">
+            <div
+              className={'flex-none jutify-center lg:flex flex-col w-full lg:w-80 xl:w-96 p-4 lg:p-8 bg-gray-50 dark:bg-gray-800 dark:bg-opacity-25'}
+            >
+              {/* Placeholder */}
+              <div className="flex-auto flex items-center justify-center rounded-xl bg-gray-50 border-2 border-dashed border-gray-200 text-gray-400 py-64 dark:bg-gray-800 dark:border-gray-700">Side Content</div>
+            </div>
             <>
 
               {/* Statistics: Simple with Action */}
@@ -434,9 +440,6 @@ export default function Navbar() {
             </div>
             {/* END Card Headings: Title with Subtitle */}
           </div>
-
-          {/* Placeholder */}
-          <div className="flex-auto flex items-center justify-center rounded-xl bg-gray-50 border-2 border-dashed border-gray-200 text-gray-400 py-64 dark:bg-gray-800 dark:border-gray-700">Side Content</div>
 
           {/* END Page Section */}
         </main>
