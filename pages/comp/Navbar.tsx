@@ -442,3 +442,8 @@ export default function Navbar() {
     </>
   )
 }
+
+
+export async function getServerSideProps() {
+  return { props: {} };
+}
