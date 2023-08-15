@@ -45,7 +45,7 @@ const HomepageContent = () => { // TO AVOID https://i.imgur.com/798mUI4.png (FOR
             });
 
             if (result.bolean) {
-                console.log("vi er gucci?")
+                console.log(result.brugernavn, result.kodeord, result.fuldenavn);
                 router.push('/forside')
             } else {
                 console.log("prøv igen..")
