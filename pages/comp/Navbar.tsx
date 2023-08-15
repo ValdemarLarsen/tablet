@@ -267,7 +267,7 @@ export default function Navbar() {
 
 
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:gap-8 mt-4">
-            <div className="w-auto rounded-lg bg-gray-100 lg:col-span-2">
+            <div className="w-auto h-auto rounded-lg bg-gray-100 lg:col-span-2">
               <div className="flex flex-col rounded-lg shadow-sm bg-white overflow-hidden dark:text-gray-100 dark:bg-gray-800">
                 {/* Card Header */}
                 <div className="py-4 px-5 bg-gray-50 dark:bg-gray-700/50">
@@ -389,8 +389,8 @@ export default function Navbar() {
 
             </div>
             <div className="h-auto rounded-lg bg-gray-100">
-              <h1 className="text-center text-white font-bold">Seneste Efterlysninger</h1>
               <nav className="border border-gray-200 rounded-lg bg-white divide-y divide-gray-200 overflow-hidden dark:text-gray-100 dark:bg-gray-900 dark:border-gray-700 dark:divide-gray-700">
+                <h1 className="text-center text-white font-bold">Seneste Efterlysninger</h1>
                 <a href="#" className="p-4 flex justify-between items-center text-gray-700 hover:text-gray-700 hover:bg-gray-50 active:bg-white dark:text-gray-200 dark:hover:bg-gray-800/50 dark:active:bg-gray-900">
                   <div className="flex items-center space-x-4">
                     <img src="https://cdn.tailkit.com/media/placeholders/avatar-iFgRcqHznqg-160x160.jpg" alt="User Avatar" className="inline-block w-10 h-10 rounded-full" />
