@@ -8,8 +8,10 @@ export default function Navbar() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   const appState = useSelector((state: RootState) => state.user);
-  console.log(JSON.stringify(appState, null, 2));
+ 
 
+
+  console.log(appState.navn);
 
   const months = [
     "januar",
