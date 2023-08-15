@@ -267,7 +267,7 @@ export default function Navbar() {
 
 
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:gap-8 mt-4">
-            <div className="h-32 rounded-lg bg-gray-100 lg:col-span-2">
+            <div className="w-auto rounded-lg bg-gray-100 lg:col-span-2">
               <div className="border border-gray-200 rounded overflow-x-auto min-w-full bg-white dark:bg-gray-800 dark:border-gray-700">
                 {/* Table */}
                 <table className="min-w-full text-sm align-middle whitespace-nowrap">
