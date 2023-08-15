@@ -19,7 +19,7 @@ function Breadcrumbs() {
   const formatPath = (path) => {
     switch (path) {
       case 'forside':
-        return 'Forside';
+        return 'Politi Tablet/Forside';
       case 'krside':
         return 'Kriminalregister';
       // Flere cases kan tilføjes efter behov...
