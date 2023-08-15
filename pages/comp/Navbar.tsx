@@ -3,7 +3,65 @@ import { useSelector } from 'react-redux';
 // Headless UI, for more info and examples you can check out https://github.com/tailwindlabs/headlessui
 import { Menu, Transition } from "@headlessui/react";
 import { RootState } from './../../state/store';
-import  Realnav  from './Realnav'
+import Realnav from './Realnav'
+
+
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+
+
+
+function Breadcrumbs() {
+  const router = useRouter();
+  const paths = router.pathname.split("/").filter(Boolean);
+
+  // Omsæt rå stinavne til mere læselige navne (kan udvides efter behov)
+  const formatPath = (path) => {
+    switch (path) {
+      case 'forside':
+        return 'Forside';
+      case 'krside':
+        return 'Kriminalregister';
+      // Flere cases kan tilføjes efter behov...
+      default:
+        return path.charAt(0).toUpperCase() + path.slice(1);
+    }
+  }
+
+  return (
+    <nav className="rounded px-4 py-2 dark:text-gray-100 bg-gray-100 dark:bg-gray-800">
+      <ol className="flex items-center">
+        {paths.map((path, idx) => {
+          const isLast = idx === paths.length - 1;
+          const to = `/${paths.slice(0, idx + 1).join("/")}`;
+          const formattedPath = formatPath(path);
+
+          return (
+            <li key={idx} className="flex items-center">
+              {!isLast ? (
+                <>
+                  <Link href={to}>
+                    <a className="text-blue-600 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300">
+                      {formattedPath}
+                    </a>
+                  </Link>
+                  <span className="px-1 opacity-25">
+                    <svg className="hi-mini hi-chevron-right inline-block w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" />
+                    </svg>
+                  </span>
+                </>
+              ) : (
+                <span>{formattedPath}</span>
+              )}
+            </li>
+          );
+        })}
+      </ol>
+    </nav>
+  );
+}
+
 export default function Navbar() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
@@ -35,19 +93,15 @@ export default function Navbar() {
 
 
       <div id="page-container" className="h-screen w-screen bg-gray-100 dark:text-gray-100 dark:bg-gray-900">
-        {/* Page Header */}
+        {/* Indhender min navbar fra Realnavn.tsx */}
         <Realnav />
-        {/* Page Container */}
 
-        {/* END Page Header */}
-
-        {/* Page Content */}
 
 
 
 
         <div className="2xl:container mx-auto p-6 lg:p10">
-
+          <Breadcrumbs />
           <>
 
             {/* Statistics: Simple with Action */}
