@@ -275,7 +275,7 @@ export default function Navbar() {
                     Seneste Sager
                   </h3>
                   <h4 className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                    Her er alle de seneste sager der er blevet oprettet!
+                    De seneste 3 sager der er blevet oprettet i kr.
                   </h4>
                 </div>
                 <div className="border border-gray-200 rounded overflow-x-auto min-w-full bg-white dark:bg-gray-800 dark:border-gray-700">
@@ -390,7 +390,14 @@ export default function Navbar() {
             </div>
             <div className="h-auto rounded-lg bg-gray-100">
               <nav className="border border-gray-200 rounded-lg bg-white divide-y divide-gray-200 overflow-hidden dark:text-gray-100 dark:bg-gray-900 dark:border-gray-700 dark:divide-gray-700">
-                <h1 className="text-center text-white font-bold">Seneste Efterlysninger</h1>
+                <div className="py-4 px-5 bg-gray-50 dark:bg-gray-700/50">
+                  <h3 className="font-semibold mb-1">
+                    Seneste Efterlysninger
+                  </h3>
+                  <h4 className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                    Seneste 5 oprettet efterlysninger
+                  </h4>
+                </div>
                 <a href="#" className="p-4 flex justify-between items-center text-gray-700 hover:text-gray-700 hover:bg-gray-50 active:bg-white dark:text-gray-200 dark:hover:bg-gray-800/50 dark:active:bg-gray-900">
                   <div className="flex items-center space-x-4">
                     <img src="https://cdn.tailkit.com/media/placeholders/avatar-iFgRcqHznqg-160x160.jpg" alt="User Avatar" className="inline-block w-10 h-10 rounded-full" />
