@@ -7,7 +7,7 @@ import { useRouter } from 'next/router'
 
 
 
-export default function Realnav( { href }) {
+export default function Realnav() {
     const appState = useSelector((state: RootState) => state.user);
     const router = useRouter()
     const months = [
@@ -28,10 +28,7 @@ export default function Realnav( { href }) {
     const currentMonth = months[new Date().getMonth()];
 
 
-    const handleClick = (e) => {
-        e.preventDefault()
-        router.push(href)
-    }
+
 
 
     return (

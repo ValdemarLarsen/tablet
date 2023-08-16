@@ -1,7 +1,7 @@
 import Realnav from './Realnav'
 
 
-export default function Sogkr( { href }) {
+export default function Sogkr() {
     return (
         <>
             <Realnav />
