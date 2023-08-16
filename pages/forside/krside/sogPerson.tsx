@@ -2,7 +2,7 @@ import Sogkr from './../../comp/Sogkr';
 
 
 
-export default function findPersonSide() {
+export function findPersonSide() {
 
 
     return (
